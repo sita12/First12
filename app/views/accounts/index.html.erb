@@ -1,1 +1,6 @@
-
+<% @accounts.each do |account| %>
+  <h3><%= account.Title %></h3>
+  <h3><%= account.Amount %></h3>
+  <h3><%= account.Date %></h3>
+  
+<% end %>
