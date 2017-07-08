@@ -23,11 +23,6 @@ ActiveRecord::Schema.define(version: 20170708112807) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "ideas", force: :cascade do |t|
-    t.text "description"
-    t.string "author"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
+ 
 
 end
