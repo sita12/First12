@@ -13,6 +13,7 @@ class AccountsController < ApplicationController
       @account = Account.create(account_params)
       if @account.valid?
          flash[:success] = "Succesfully created!"
+
       else
          flash[:alert] = "Woops! Looks like there has been an error!"
       end
@@ -42,7 +43,7 @@ class AccountsController < ApplicationController
   end
 
 	def account_params
-		params.require(:account).permit(:Title,:Amount,:Date)
+		params.require(:account).permit(:title,:amount,:date)
     end  
     
 
