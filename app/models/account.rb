@@ -5,6 +5,6 @@ class Account < ApplicationRecord
    end
 
    def self.debt
-     where("amount < ?", 0).sum(:amount)
+     where("amount <  0").sum(:amount)
    end
 end

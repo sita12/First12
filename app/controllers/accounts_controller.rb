@@ -5,10 +5,7 @@ class AccountsController < ApplicationController
        @balance = Account.balance
        @debt = Account.debt
     end 
-    def new
-    @account = Account.new
-    end
-  
+
       def create    
       @account = Account.create(account_params)
       if @account.valid?
